@@ -5,18 +5,65 @@ html {
     color: rgb(255, 255, 255);
     font-family: sans-serif;
 }
-button,h1,h2,h3,h4,h5,h6,a{
+button,h1,h2,h3,h4,h5,h6,a,img{
     -webkit-user-select: none;
 }
 h1 svg{
     cursor: pointer;
 }
+.nav{
+    
+}
 h1{
     margin-top: 0;
-    margin-right: 20PX;
+    padding-right: 20PX;
     padding-bottom: 15px;
     border-bottom: 1PX solid white;
     cursor: pointer;
+}
+.searchbox{
+    position: absolute;
+    left:25px;
+    top: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white ;
+    border-radius: 50%;
+    border: 1px solid black;
+    cursor: pointer;
+    border: 2px solid white;
+    transition: scale 0.5s;
+}
+.searchbox:hover{
+    scale: 1.1;
+}
+.search_bar{
+display: none;
+height: 0;
+overflow: hidden;
+transition: height 0.5s;
+}
+.search_bar button{
+    height: 6vh;
+    width: 15vh;
+    left: 4%;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    background-color: teal;
+    font-weight: 500;
+    font-size: large;
+    cursor: pointer;
+    transition: height 0.5s;
+    border-radius: 5px;
+}
+.search_bar input{
+    height: 5vh;
+    width: 90vw;
+    font-size: large;
+    color: black;
 }
 h2{
     margin-top:5vh;
@@ -59,6 +106,7 @@ margin: auto;
 margin-top: 125px;
 color: black;
 font-weight: bold;
+text-transform: uppercase;
 }
 
 .equipe::before{
@@ -82,4 +130,10 @@ font-weight: bold;
     border-radius: 50%;
     z-index: 10;
     object-fit: cover;
+}
+#not_found{
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%,-50%);
 }
