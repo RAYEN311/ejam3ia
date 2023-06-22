@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/playbox.css">
+    <title>Ejam3ia || music play </title>
+</head>
+<body>
+    <section class="body_content" dir="rtl">
+        <header>
+        <div class="top_body"  dir="rtl">
+        <h1> الجمعية <svg style="margin-left: 5px;margin-top:1vh" height="18" viewBox="-60 -40 120 80" width="27"><g fill="#e70013"><path d="m-60-40h120v80h-120z"></path><circle fill="#fff" r="20"></circle><path d="m600 250a150 150 0 0 0 -150 150 150 150 0 0 0  150 150 150 150 0 0 0  121.02344-61.64844 120 120 0 0 1 -81.02344 31.64844 120 120 0 0 1 -120-120 120 120 0 0 1  120-120 120 120 0 0 1  81.01367 31.67383 150 150 0 0 0 -121.01367-61.67383z" fill="#e70013" stroke-width="10" transform="matrix(.1 0 0 .1 -60 -40)"></path><path d="m0-1 .58779 1.80902-1.53885-1.11804h1.90212l-1.53885 1.11804z" fill="#e70013" transform="matrix(0 -9 9 0 4 0)"></path></g></svg></h1>
+        </div>
+        <div  class="top_body "  dir="ltr">
+            <img class="team_choosed" src="/media/imgs/<%= locals.key %>" alt="No image">
+            <p><%= locals.name %></p>
+        </div>
+        </header>
+    </section>
+    <section class="side_bar">
+
+    </section>
+    <section class="lowest_bar">
+       <div class="progress"> <p>00:00:00</p><progress role="timer" value="0.1"></progress><p>00:00:00</p> </div>
+       <div class="options"> <p class="song_name" > </p> <div class="controller"> <div class="last"></div> <div class="start_stop"></div> <div class="next"></div> </div></div>
+    </section>
+</body>
+<!-- <p style="height: 50px ;z-index:1000 ;padding:10px; display:flex ;justify-content:center ; width:auto ; border-radius:5px; background-color:white ; color:blue  ; position:absolute ;top : 50vh ;left :50% ; transform:translate(-50%, -50%)"> Under building and development by rayen ben brahim</p> -->
+</html>
