@@ -15,6 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    z-index: 1000;
 }
 .theme_changer:hover{
     box-shadow: 0 0 7px 2px cyan;

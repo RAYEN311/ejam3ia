@@ -1,77 +1,78 @@
 // search algorithm solution propsed by Rayen BRH
 
 // 1 - declare the objects for search keywords
-const teams_names = [
-    {0 :"as marsa"},
-    {1 :"marsa"},
-    {2 :"gnawia"},
-    {3 :"est" },
-    {4 :"taraji" },
-    {5 :"esperence" },
-    {6 :"ca" },
-    {7 :"club" },
-    {8 :"club africa" },
-    {9 :"css" },
-    {10 :"sahli" },
-    {11 :"etoile" },
-    {12 :"ess" },
-    {13 :"ben gerdane" }
-]
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-const relationnel_id_with_teams_names = [
-    {0 : "as_marsa"},
-    {1 : "as_marsa"},
-    {2 : "as_marsa"},
-    {3 : "est"},
-    {4 : "est"},
-    {5 : "est"},
-    {6 : "ca"},
-    {7 : "ca"},
-    {8 : "ca"},
-    {11 :"ess" },
-    {12 :"ess" },
-    {13 :"ben_gerdane" } 
-];
 
-console.log(teams_names.length + " search params")
-let compare_result = [teams_names.length];
 
+const keyword = document.getElementById('localword').innerText
+
+const OOP_teams = {
+    "teams_with_tags" : [
+     ["Taraji" , "taraji",  "mkachach" , "taraji" ,"est"],
+     ["As_marsa", "as_marsa" ,"as marsa" ,"marsa" , "gnaweya"], 
+     ["Bizertin" ,"bizertin",  "cab" , "binzaret" ],
+     ["Club" ,"club", "efri9i" , "ca" , ],
+     ["Etoile","etoile" ,"ess" , "sahli" , "najm"],
+     [ "Sfaxi" , "Css" , "css" ,"cs" , "sfax"],
+    ]
+}
+
+main_search_function( OOP_teams  , keyword);
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+function main_search_function( OOP_teams  , keyword){
+// init all the result to 0
+var compare_result = [];
 //identifiy the input search keyword 
-const keyword = document.getElementById('localword').innerHTML
-console.log(keyword)
-
-
 // the most inportant part
         // compare this.keyword with the objects list
-            for(var i = 0 ; i < teams_names.length ; i++){
-                var team_name = teams_names[i][i];
-                if(team_name == keyword){
+            for(var i = 0 ; i < OOP_teams.teams_with_tags.length ; i++){
+                for(var d = 0 ; d < OOP_teams.teams_with_tags[i].length ; d++){
+                    
+                if(OOP_teams.teams_with_tags[i][d] == keyword){
                     compare_result[i] = true
                     document.getElementById('TSH').style.display = "none"
                     document.getElementById('not_found').style.display = "none"
                 }
-                else(
-                    compare_result[i] = false
-                )
+                else {
+                    // compare_result[i] = false ; 
+                }
+
+            }
             }
             console.log(compare_result);
         // for upgrading in the next version with coefficent !!!!!!!!!!!!!!!!!!!!!!!
-
-
 // finall step is rendering the elements 
-
-for(var j=0; j < relationnel_id_with_teams_names.length ;j++){
+for(var j=0; j < compare_result.length ;j++){
 if(compare_result[j] == true){
-    console.log(relationnel_id_with_teams_names[j][j])
     function creat_store_element(){
     let div = document.createElement('div');
-    div.innerHTML = '<div class="equipe" id = " '+ relationnel_id_with_teams_names[j][j] +' "><div ><img src="/media/imgs/'+ relationnel_id_with_teams_names[j][j] +'.png" alt="equipe"></div><p> '+ relationnel_id_with_teams_names[j][j] +' </p></div>'
+    div.innerHTML = '<div class="equipa" id = " '+ OOP_teams.teams_with_tags[j][0] +' "><div ><img src="/media/imgs/'+ OOP_teams.teams_with_tags[j][0] +'.png" alt="equipe"></div><p style="position:absolute; right : 50vw ; transform:translate(50%)"> '+ OOP_teams.teams_with_tags[j][0] +' </p></div>'
     return div
     }
     const to_render_content = document.getElementById("equipes_searched")
     to_render_content.appendChild(creat_store_element())
 }
 else{
-
+}
 }
 }

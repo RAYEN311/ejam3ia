@@ -5,7 +5,7 @@
 // first we need the init
 
 let TN_CH = document.getElementById("T_CH");
-var theme  = getCookie("choosed") || "1"  //default theme ;
+var theme  = getCookie("choosed") || "0"  //default theme ;
 
 // the switcher for every pages
 

@@ -18,7 +18,7 @@ search_button.addEventListener('click',()=>{
     searsh_button.style.height = "0"
     setTimeout(()=>{
         search_bar.style.height = "6vh"
-        searsh_button.style.height = "6vh"
+        searsh_button.style.height = "2.5rem"
     },10)
 }      
     else if(search_shown){
