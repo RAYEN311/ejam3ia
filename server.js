@@ -22,8 +22,9 @@ app.get('/',( req ,res )=>{
 const homeRouter = require('./routes/home')
 app.use('/', homeRouter)
 
-const songsroutes = require('./routes/teams_songs.js')
-app.use('/tn', songsroutes)
+const teams_route = require('./routes/teams.js')
+app.use('/tn', teams_route)
+app.use('/search' , teams_route)
 
 // listening the http request from the frontend
 app.listen(port, () => console.log(`BRH Server listening on http://localhost:${port}/tn`))
