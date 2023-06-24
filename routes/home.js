@@ -1,7 +1,7 @@
 const express = require('express')
 const homeroutes = express.Router()
 
-homeroutes.get('/TN' , (req , res)=>{
+homeroutes.get('/main_tn' , (req , res)=>{
     res.render('main_teams_page')
 })
 homeroutes.get('/search' , (req , res)=>{

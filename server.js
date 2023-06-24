@@ -12,19 +12,32 @@ app.set('view engine' , 'ejs')
 app.use(express.static('./public'))
 app.use(express.urlencoded({extended : true}))
 
-// get methode for the initial page 
 // use router in our application (methode / best one)
+
+
+
+// CLIENT REQUIRING THE INTRODUCTION PAGE
 
 app.get('/',( req ,res )=>{
     res.render('introduction');
 })
 
+// CLIENT REQUIRING THE IMAGES FROM THE SERVER
+
+app.get('/img/:img_name',(req ,res)=>{
+    // res.render('introduction');
+    let name = req.params.img_name ;
+    res.sendFile( __dirname +'/public/media/imgs/' + name)
+})
+
 const homeRouter = require('./routes/home')
 app.use('/', homeRouter)
 
-const teams_route = require('./routes/teams.js')
-app.use('/tn', teams_route)
-app.use('/search' , teams_route)
+
+const team_route = require('./routes/teams.js')
+
+app.use('/tn', team_route)
+
 
 // listening the http request from the frontend
 app.listen(port, () => console.log(`BRH Server listening on http://localhost:${port}/tn`))

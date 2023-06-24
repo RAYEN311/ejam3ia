@@ -18,11 +18,11 @@ const keyword = document.getElementById('localword').innerText
 const OOP_teams = {
     "teams_with_tags" : [
      ["Taraji" , "taraji",  "mkachach" , "taraji" ,"est"],
-     ["As_marsa", "as_marsa" ,"as marsa" ,"marsa" , "gnaweya"], 
+     ["As_marsa", "as_marsa" ,"as marsa" ,"marsa" , "gnaweya" , "asm"], 
      ["Bizertin" ,"bizertin",  "cab" , "binzaret" ],
      ["Club" ,"club", "efri9i" , "ca" , ],
      ["Etoile","etoile" ,"ess" , "sahli" , "najm"],
-     [ "Sfaxi" , "Css" , "css" ,"cs" , "sfax"],
+     [ "sfaxi" , "Css" , "css" ,"cs" , "sfax"],
     ]
 }
 
@@ -66,7 +66,7 @@ for(var j=0; j < compare_result.length ;j++){
 if(compare_result[j] == true){
     function creat_store_element(){
     let div = document.createElement('div');
-    div.innerHTML = '<div class="equipa" id = " '+ OOP_teams.teams_with_tags[j][0] +' "><div ><img src="media/imgs/'+ OOP_teams.teams_with_tags[j][0] +'.png" alt="equipe"></div><p style="position:absolute; right : 50vw ; transform:translate(50%)"> '+ OOP_teams.teams_with_tags[j][0] +' </p></div>'
+    div.innerHTML = '<div class="equipa" id = " '+ OOP_teams.teams_with_tags[j][0] +' "><div ><img src="../img/'+ OOP_teams.teams_with_tags[j][0] +'.png" alt="equipe"></div><p style="position:absolute; right : 50vw ; transform:translate(50%)"> '+ OOP_teams.teams_with_tags[j][0] +' </p></div>'
     return div
     }
     const to_render_content = document.getElementById("equipes_searched")
