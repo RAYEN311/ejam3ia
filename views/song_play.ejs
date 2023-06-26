@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/playbox.css">
-    <title>Ejam3ia || music play </title>
+    <link rel="stylesheet" href="/styles/theme_changer.css">
+    <title>Ejam3ia || <%= locals.name %> || music play </title>
 </head>
 <body>
     <section class="body_content" dir="rtl">
@@ -18,13 +19,30 @@
         </div>
         </header>
     </section>
-    <section class="side_bar">
-
+    <section class="main_content">
+        
     </section>
-    <section class="lowest_bar">
+    <button id="lis" style="position: absolute; top:50vh ; left:50vw ;transform:translate(-50%,-50%)">click me</button>
+    <section class="side_bar">
+    </section>
+    <section class="lowest_bar" id="lowest">
+       <div class="theme_changer music_theme" id="T_CH"><svg class="icon icon-tabler icon-tabler-brightness-up" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="#000" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <circle cx="12" cy="12" r="3" /> <line x1="12" y1="5" x2="12" y2="3" /> <line x1="17" y1="7" x2="18.4" y2="5.6" /> <line x1="19" y1="12" x2="21" y2="12" /> <line x1="17" y1="17" x2="18.4" y2="18.4" /> <line x1="12" y1="19" x2="12" y2="21" /> <line x1="7" y1="17" x2="5.6" y2="18.4" /> <line x1="6" y1="12" x2="4" y2="12" /> <line x1="7" y1="7" x2="5.6" y2="5.6" /> </svg></div>
        <div class="progress"> <p>00:00:00</p><progress role="timer" value="0.1"></progress><p>00:00:00</p> </div>
        <div class="options"> <p class="song_name" > </p> <div class="controller"> <div class="last"></div> <div class="start_stop"></div> <div class="next"></div> </div></div>
     </section>
 </body>
+<script>
+    var v = 0 ;
+    document.getElementById('lis').addEventListener('click',()=>{
+         if(v == 0 ){
+         document.getElementById('lowest').style.cssText = "transform:translateY(0vh);"
+         v = 1 ;
+        }else{
+          document.getElementById('lowest').style.cssText = "transform:translateY(14vh);"
+         v = 0 ;
+         }
+    })
+</script>
+<script src="/scripts/themechanger.js"></script>
 <!-- <p style="height: 50px ;z-index:1000 ;padding:10px; display:flex ;justify-content:center ; width:auto ; border-radius:5px; background-color:white ; color:blue  ; position:absolute ;top : 50vh ;left :50% ; transform:translate(-50%, -50%)"> Under building and development by rayen ben brahim</p> -->
 </html>

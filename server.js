@@ -40,7 +40,7 @@ app.use('/tn', team_route)
 
 
 // listening the http request from the frontend
-app.listen(port, () => console.log(`BRH Server listening on http://localhost:${port}/tn`))
+app.listen(port, () => console.log(`BRH Server listening on http://localhost:${port}/main_tn`))
 
 
 

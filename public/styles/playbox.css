@@ -1,7 +1,7 @@
 :root {
     --color_I : rgb(0, 0, 0) ; 
     --color_II : white  ; 
-    --bgColor_I : white ;
+    --bgColor_I : whitesmoke ;
     --bgColor_II :  rgb(0, 2, 16) ;
     --color_III : white ;
 }
@@ -15,7 +15,7 @@ body{
     color: var(--color_I);
     font-family: sans-serif;
 }
-button,h1,h2,h3,h4,h5,h6,a,img{
+button,h1,h2,h3,h4,h5,h6,a,img,.next,.last ,.controller {
     -webkit-user-select: none;
 }
 .body_content {
@@ -28,7 +28,7 @@ button,h1,h2,h3,h4,h5,h6,a,img{
 .body_content header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid var(--color_I);
 }
 .top_body{
     display: flex;
@@ -36,9 +36,10 @@ button,h1,h2,h3,h4,h5,h6,a,img{
     align-items: center;
 }
 .top_body p{
-    font-weight:600;
+    font-weight:700;
     letter-spacing: 0.7px;
     font-size: 14px;
+    text-transform: uppercase;
 }
 h1{
     padding-right: 20PX;
@@ -56,9 +57,9 @@ h1{
 }
 .side_bar{
 width: 8vh;
-height: 88vh;
+height: 100vh;
 position: fixed;
-background-color: rgb(231, 231, 231);
+background-color: black;
 border-right: 1px solid rgb(131, 131, 131);
 z-index: 2;
 }
@@ -68,9 +69,13 @@ z-index: 2;
     height: 14vh;
     position: fixed;
     background-color: whitesmoke;
-    background: linear-gradient(15deg,rgb(219, 219, 219),rgb(206, 206, 206) );
+    /* background: linear-gradient(180deg,var(--bgColor_II), var(--bgColor_I) ); */
+    background: linear-gradient(45deg , rgb(43, 23, 23) , rgba(7, 7, 51, 0.778));
     border-top: 1px solid black;
     z-index: 3;
+    transform: translateY(14vh);
+    transition: transform 0.5s;
+    
 }
 .lowest_bar .progress{
     width: 90%;
@@ -82,10 +87,12 @@ z-index: 2;
 }
 .lowest_bar .progress progress{
 width: 90vw;
+height: 5px;
+
 }
 .lowest_bar .progress p {
-    color: black;
     margin: 8px;
+    color: white!important;
 }
 .controller{
     position: absolute;
@@ -99,18 +106,20 @@ width: 90vw;
     cursor: pointer;
 }
 .last , .next {
-    height: 6vh;
-    width: 6vh;
+    height: 5vh;
+    width: 5vh;
     border-radius: 50%;
-    background-color: black;
+    background-color: var(--bgColor_II);
     margin-left: 20px;
     margin-right: 20px;
+    border: 1px solid var(--color_II);
 }
 .start_stop{
-height: 8vh;
-width: 8vh;
-border-radius: 50%;
-background-color: black;
+    background-color: var(--bgColor_II);
+    height: 7vh;
+    width: 7vh;
+    border-radius: 50%;
+    border: 1px solid var(--color_II);
 }
 .start_stop:hover,.next:hover,.last:hover{
     scale: 1.1;

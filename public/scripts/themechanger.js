@@ -13,11 +13,11 @@ TN_CH.addEventListener('click',()=>{
   switch(theme){
     case "0":
       setCookie("choosed" , 1 , 30);
-      window.location = "/main_tn"
+      window.location = " "
       break ; 
     case "1":
       setCookie("choosed" , 0 , 30);
-      window.location = "/main_tn"
+      window.location =  " "
       break ; 
         
 }})
