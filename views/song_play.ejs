@@ -24,11 +24,24 @@
     </section>
     <button id="lis" style="position: absolute; top:50vh ; left:50vw ;transform:translate(-50%,-50%)">click me</button>
     <section class="side_bar">
+        <a href=<%= locals.origin_url %>><svg fill="#fff" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg></a>
     </section>
     <section class="lowest_bar" id="lowest">
        <div class="theme_changer music_theme" id="T_CH"><svg class="icon icon-tabler icon-tabler-brightness-up" width="40" height="40" viewBox="0 0 24 24" stroke-width="2" stroke="#fff" fill="#000" stroke-linecap="round" stroke-linejoin="round"> <path stroke="none" d="M0 0h24v24H0z" fill="none"/> <circle cx="12" cy="12" r="3" /> <line x1="12" y1="5" x2="12" y2="3" /> <line x1="17" y1="7" x2="18.4" y2="5.6" /> <line x1="19" y1="12" x2="21" y2="12" /> <line x1="17" y1="17" x2="18.4" y2="18.4" /> <line x1="12" y1="19" x2="12" y2="21" /> <line x1="7" y1="17" x2="5.6" y2="18.4" /> <line x1="6" y1="12" x2="4" y2="12" /> <line x1="7" y1="7" x2="5.6" y2="5.6" /> </svg></div>
        <div class="progress"> <p>00:00:00</p><progress role="timer" value="0.1"></progress><p>00:00:00</p> </div>
-       <div class="options"> <p class="song_name" > </p> <div class="controller"> <div class="last"></div> <div class="start_stop"></div> <div class="next"></div> </div></div>
+       <div class="options"> <p class="song_name" > </p> <div class="controller">
+            <div class="last">
+                <svg  viewBox="0 0 320 512"><path d="M267.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160L64 241V96c0-17.7-14.3-32-32-32S0 78.3 0 96V416c0 17.7 14.3 32 32 32s32-14.3 32-32V271l11.5 9.6 192 160z"/></svg>
+            </div>
+            <div class="start_stop" id="pause_play_butt">
+                <svg  id="play_butt" viewBox="0 0 384 512"><path d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"/></svg>
+                <svg  id="pause_butt"viewBox="0 0 320 512"><path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"/></svg>
+            </div>
+             
+            <div class="next">
+                <svg  viewBox="0 0 320 512"><path d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4l192 160L256 241V96c0-17.7 14.3-32 32-32s32 14.3 32 32V416c0 17.7-14.3 32-32 32s-32-14.3-32-32V271l-11.5 9.6-192 160z"/></svg>
+            </div>
+     </div></div>
     </section>
 </body>
 <script>
@@ -40,6 +53,18 @@
         }else{
           document.getElementById('lowest').style.cssText = "transform:translateY(14vh);"
          v = 0 ;
+         }
+    })
+    var w = 0 ;
+    document.getElementById('pause_play_butt').addEventListener('click',()=>{
+         if(w == 0 ){
+        document.getElementById('play_butt').style.cssText = "display:none;"
+        document.getElementById('pause_butt').style.cssText = "dispaly:block;"
+         w = 1 ;
+        }else{
+        document.getElementById('play_butt').style.cssText = "dispaly:block;"
+        document.getElementById('pause_butt').style.cssText = "display:none;"
+         w = 0 ;
          }
     })
 </script>
