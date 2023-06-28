@@ -196,13 +196,3 @@ background: var(--backdrop);
 box-shadow: var(--box_shad);
 scale: 1.05;
 }
-@media (min-width :1200px){
-    header{
-        width: calc(100vw - 10vh);
-    }
-}
-@media (max-width :1200px){
-    header{
-        width: calc(100vw - 8vh);
-    }
-}
