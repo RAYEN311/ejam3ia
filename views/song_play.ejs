@@ -14,15 +14,20 @@
         <h1> الجمعية <svg style="margin-left: 5px;margin-top:1vh" height="18" viewBox="-60 -40 120 80" width="27"><g fill="#e70013"><path d="m-60-40h120v80h-120z"></path><circle fill="#fff" r="20"></circle><path d="m600 250a150 150 0 0 0 -150 150 150 150 0 0 0  150 150 150 150 0 0 0  121.02344-61.64844 120 120 0 0 1 -81.02344 31.64844 120 120 0 0 1 -120-120 120 120 0 0 1  120-120 120 120 0 0 1  81.01367 31.67383 150 150 0 0 0 -121.01367-61.67383z" fill="#e70013" stroke-width="10" transform="matrix(.1 0 0 .1 -60 -40)"></path><path d="m0-1 .58779 1.80902-1.53885-1.11804h1.90212l-1.53885 1.11804z" fill="#e70013" transform="matrix(0 -9 9 0 4 0)"></path></g></svg></h1>
         </div>
         <div  class="top_body "  dir="ltr">
-            <img class="team_choosed" src="/media/imgs/<%= locals.key %>" alt="No image">
+            <img class="team_choosed" src="/media/imgs/icons/<%= locals.key %>" alt="No image">
             <p><%= locals.name %></p>
         </div>
         </header>
+        <section>
+            <div class="profil_bar"></div>
+            <div class="display_methode_bar"></div>
+        </section>
     </section>
     <section class="main_content">
-        
+        <div class="playbox"></div>
+        <div class="playbox"></div>
     </section>
-    <button id="lis" style="position: absolute; top:50vh ; left:50vw ;transform:translate(-50%,-50%)">click me</button>
+    <button id="lis" class="button" style="position: absolute; top:15vh ;z-index:-1; left:50vw ;transform:translate(-50%,-50%)">click me</button>
     <section class="side_bar">
         <a href=<%= locals.origin_url %>><svg fill="#fff" viewBox="0 0 576 512"><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg></a>
     </section>
@@ -44,30 +49,8 @@
      </div></div>
     </section>
 </body>
-<script>
-    var v = 0 ;
-    document.getElementById('lis').addEventListener('click',()=>{
-         if(v == 0 ){
-         document.getElementById('lowest').style.cssText = "transform:translateY(0vh);"
-         v = 1 ;
-        }else{
-          document.getElementById('lowest').style.cssText = "transform:translateY(14vh);"
-         v = 0 ;
-         }
-    })
-    var w = 0 ;
-    document.getElementById('pause_play_butt').addEventListener('click',()=>{
-         if(w == 0 ){
-        document.getElementById('play_butt').style.cssText = "display:none;"
-        document.getElementById('pause_butt').style.cssText = "dispaly:block;"
-         w = 1 ;
-        }else{
-        document.getElementById('play_butt').style.cssText = "dispaly:block;"
-        document.getElementById('pause_butt').style.cssText = "display:none;"
-         w = 0 ;
-         }
-    })
-</script>
-<script src="/scripts/themechanger.js"></script>
 <!-- <p style="height: 50px ;z-index:1000 ;padding:10px; display:flex ;justify-content:center ; width:auto ; border-radius:5px; background-color:white ; color:blue  ; position:absolute ;top : 50vh ;left :50% ; transform:translate(-50%, -50%)"> Under building and development by rayen ben brahim</p> -->
+<script src="/scripts/play_pause_controller.js" type="module"></script>
+<script src="/scripts/render_covers_play_box.js" type="module"></script>
+<script src="/scripts/theme_changer.js" type="module"></script>
 </html>

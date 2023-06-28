@@ -4,9 +4,12 @@
     --bgColor_I : whitesmoke ;
     --bgColor_II :  rgb(0, 2, 16) ;
     --color_III : white ;
+    --box_shad : 0px 0px 5px 2px rgba(0, 255, 255, 0.768);
+    --backdrop : rgba(0, 0, 0) ;
 }
 html {
     background-color: var(--bgColor_I);
+    overflow-x: hidden;
 }
 body{
     margin: 0;
@@ -27,6 +30,10 @@ button,h1,h2,h3,h4,h5,h6,a,img,.next,.last ,.controller {
 }
 header{
     height: 9vh;
+    width: calc(100vw - 8vh);
+    position: fixed;
+    z-index: 1000;
+    background-color: var(--bgColor_I);
 }
 .body_content header {
     display: grid;
@@ -43,6 +50,7 @@ header{
     letter-spacing: 0.7px;
     font-size: 14px;
     text-transform: uppercase;
+    width: 50px;
 }
 h1{
     padding-right: 20PX;
@@ -54,7 +62,7 @@ h1{
 .team_choosed{
     height: 7vh;
     width: 7vh;
-    object-fit: cover;
+    object-fit:contain;
     margin: 1vh;
     margin-left: 10px;
 }
@@ -153,12 +161,48 @@ height: 5px;
 .start_stop svg{
     height: 4vh;
 }
-.start_stop #pause_butt{
-}
 .start_stop #play_butt{
     
     margin-left: 0.5vh;
  }
 .last svg , .next svg{
     height: 3vh;
+}
+.main_content{
+    position: absolute;
+    top: 30vh;
+    left: 10vh;
+    width: calc(100vw - 12vh);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow: hidden;
+    z-index: -1;
+}
+.main_content .playbox{
+    background: rgb(212, 212, 212) ;
+    box-shadow: 0px 0px 7px 3px black;
+    border: 1px solid var(--color_I);
+    height: 26vh;
+    width:25vh;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+    transition: scale 0.2s;
+}
+.main_content .playbox:hover{
+background: var(--backdrop);
+box-shadow: var(--box_shad);
+scale: 1.05;
+}
+@media (min-width :1200px){
+    header{
+        width: calc(100vw - 10vh);
+    }
+}
+@media (max-width :1200px){
+    header{
+        width: calc(100vw - 8vh);
+    }
 }

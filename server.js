@@ -27,7 +27,7 @@ app.get('/',( req ,res )=>{
 app.get('/img/:img_name',(req ,res)=>{
     // res.render('introduction');
     let name = req.params.img_name ;
-    res.sendFile( __dirname +'/public/media/imgs/' + name)
+    res.sendFile( __dirname +'/public/media/imgs/icons/' + name)
 })
 
 const homeRouter = require('./routes/home')

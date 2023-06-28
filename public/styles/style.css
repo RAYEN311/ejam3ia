@@ -90,9 +90,11 @@ h2{
 .equipe{
     height: 170px;
     width: 150px;
+    display: block;
     background-color: var(--color_I);
     border: 1px solid var(--bgColor_I);
     border-radius:20px ;
+    
     margin: 10px;
     transition: scale 0.5s;
     cursor: pointer;
@@ -119,19 +121,24 @@ h2{
     box-shadow: 0 0 0 0 #ffffff;
     border: 1px solid rgb(0, 25, 50)
 }
-.equipe p{
-margin: auto;
-margin-top: 125px;
-color: var(--bgColor_I);
-font-weight: bold;
-text-transform: uppercase;
-}
+
 .equipa p{
 margin: auto;
 margin-top: 125px;
 color: var(--bgColor_I);
 font-weight: bold;
+text-align: center;
 text-transform: uppercase;
+text-decoration: none;
+}
+.equipe p{
+margin: auto;
+margin-top: 125px;
+color: var(--bgColor_I);
+font-weight: bold;
+text-align: center;
+text-transform: uppercase;
+text-decoration: none;
 }
 
 /* .equipe::before{
@@ -150,7 +157,7 @@ text-transform: uppercase;
     height: 100px;
     width: 100px;
     z-index: 10;
-    object-fit: cover;
+    object-fit:contain;
 }
 .equipa div img{
     position: absolute;
@@ -158,7 +165,7 @@ text-transform: uppercase;
     height: 100px;
     width: 100px;
     z-index: 10;
-    object-fit: cover;
+    object-fit: contain;
 }
 #not_found{
     position: absolute;
