@@ -1,0 +1,189 @@
+{ "tp":[
+  [
+    {
+      "name": "awled_lbled_intro",
+      "name_art" : "",
+      "artist": "gnaweya origin" ,
+      "duration" : "03:16",
+      "image": "cover/as_marsa/as_marsa1.jpg",
+      "path": "awled_lbled_intro.mp3"
+    },
+    {
+      "name": "la_vie_de_la_mort",
+      "name_art" : "",
+      "artist": "gnaweya origin",
+      "image": "cover/as_marsa/as_marsa2.jpg",
+      "duration" : "2:35",
+      "path": "la_vie_de_la_mort.mp3"
+    },
+    {
+      "name": "khadhra_w_safra_7eyati",
+      "name_art" : "",
+      "artist": "gnaweya origin",
+      "image": "cover/as_marsa/as_marsa3.jpg",
+      "duration" : "2:29",
+      "path": "khadhra_w_safra_7eyati.mp3"
+    },
+    {
+      "name": "awled_lbled",
+      "name_art" : "4:27",
+      "artist": "gnaweya origin",
+      "image": "cover/as_marsa/as_marsa4.jpg",
+      "duration" : "",
+      "path": "awled_lbled.mp3"
+    },
+    {
+      "name": "Vamos_gnawiya",
+      "name_art" : "",
+      "artist": "gnaweya origin",
+      "duration" : "2:45",
+      "image": "cover/as_marsa/as_marsa7.jpg",
+      "path": "Vamos_gnawiya.mp3"
+    }
+    ] , [
+      {
+        "name": "awled_lbled_intro",
+        "name_art" : "",
+        "artist": "gnaweya origin" ,
+        "image": "cover/taraji/taraji11.jpg",
+        "duration" : "",
+        "path": "awled_lbled_intro.mp3"
+      },
+      {
+        "name": "la_vie_de_la_mort",
+        "name_art" : "",
+        "artist": "gnaweya origin",
+        "image": "cover/taraji/taraji2.jpg",
+        "duration" : "",
+        "path": "la_vie_de_la_mort.mp3"
+      },
+      {
+        "name": "khadhra_w_safra_7eyati",
+        "name_art" : "",
+        "artist": "gnaweya origin",
+        "image": "cover/taraji/taraji3.jpg",
+        "duration" : "",
+        "path": "khadhra_w_safra_7eyati.mp3"
+      },
+      {
+        "name": "awled_lbled",
+        "name_art" : "",
+        "artist": "gnaweya origin",
+        "duration" : "",
+        "image": "cover/taraji/taraji4.jpg",
+        "path": "awled_lbled.mp3"
+      },
+      {
+        "name": "Vamos_gnawiya",
+        "name_art" : "",
+        "artist": "gnaweya origin",
+        "duration" : "",
+        "image": "cover/taraji/taraji5.jpg",
+        "path": "Vamos_gnawiya.mp3"
+      },
+      {
+        "name": "awled_lbled_intro",
+        "name_art" : "",
+        "artist": "gnaweya origin" ,
+        "duration" : "",
+        "image": "cover/taraji/taraji6.jpg",
+        "path": "awled_lbled_intro.mp3"
+      },
+      {
+        "name": "la_vie_de_la_mort",
+        "name_art" : "",
+        "artist": "gnaweya origin",
+        "image": "cover/taraji/taraji7.jpg",
+        "duration" : "",
+        "path": "la_vie_de_la_mort.mp3"
+      },
+      {
+        "name": "khadhra_w_safra_7eyati",
+        "name_art" : "",
+        "artist": "gnaweya origin",
+        "image": "cover/taraji/taraji8.jpg",
+        "duration" : "",
+        "path": "khadhra_w_safra_7eyati.mp3"
+      },
+      {
+        "name": "awled_lbled",
+        "name_art" : "",
+        "artist": "gnaweya origin",
+        "image": "cover/taraji/taraji9.jpg",
+        "duration" : "",
+        "path": "awled_lbled.mp3"
+      },
+      {
+        "name": "Vamos_gnawiya",
+        "name_art" : "",
+        "artist": "gnaweya origin",
+        "image": "cover/taraji/taraji10.jpg",
+        "duration" : "",
+        "path": "Vamos_gnawiya.mp3"
+      },
+      {
+        "name": "Vamos_gnawiya",
+        "name_art" : "",
+        "artist": "gnaweya origin",
+        "image": "cover/taraji/taraji1.jpg",
+        "duration" : "",
+        "path": "Vamos_gnawiya.mp3"
+      }
+      ] , 
+      [
+        
+      ],
+      [
+        {
+          "name_art": "💛 CAB ما تحكيش معايا 💛",
+          "name": "mata7kich_m3aya",
+          "duration" : "2:37",
+          "artist": "CAB origin",
+          "image": "cover/bizertin/bizertin2.jpg",
+          "path": "mata7kich_m3aya.mp3"
+        },
+        {
+          "name_art": "💛 CAB إنتي لتفرح و تبكي 💛",
+          "name": "enti_eli_tafrah_w_tebki",
+          "artist": "CAB origin",
+          "image": "cover/bizertin/bizertin1.jpg",
+          "duration" : "3:32",
+          "path": "enti_eli_tafrah_w_tebki.mp3"
+        },
+        {
+          "name_art": "💛🖤 CAB - Cha3él l Falmme _ شــعل الفـلام 💛🖤 ",
+          "name": "Cha3él_l_Falmme",
+          "duration" : "3:13",
+          "artist": "CAB origin",
+          "image": "cover/bizertin/bizertin3.jpg",
+          "path": "Cha3él_l_Falmme.mp3"
+        },
+        {
+          "name": "hija",
+          "duration" : "2:16",
+          "name_art" : "Groupe Musical Cabiste-90ans-هيجة ",
+          "artist": "CAB origin",
+          "image": "cover/bizertin/bizertin4.jpg",
+          "path": "hija.mp3"
+        },
+        {
+          "name": "mix1",
+          "duration" : "6:28",
+          "name_art" : "افضل اغاني النادي الرياضي البنزرتي التونسي 🖤💛",
+          "artist": "Mix CAB origin",
+          "image": "cover/bizertin/bizertin5.jpg",
+          "path": "mix1.mp3"
+        }
+      ],
+      
+      [
+        {
+          "name": "Vamos_gnawiya",
+          "duration" : "3:06",
+          "name_art" : "l 7amra la3ziza virage ✪ ✪ ✪ ",
+          "artist": "gnaweya origin",
+          "image": "cover/etoile/etoile3.jpg",
+          "path": "el_7amra_la3ziza_virage.mp3"
+    }
+  ]
+]}
