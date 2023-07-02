@@ -16,6 +16,12 @@ app.use(express.urlencoded({extended : true}))
 
 
 
+
+
+///////////////////////////////  single part////////////////////////////////////////////
+
+
+
 // CLIENT REQUIRING THE INTRODUCTION PAGE
 
 app.get('/',( req ,res )=>{
@@ -29,6 +35,30 @@ app.get('/img/:img_name',(req ,res)=>{
     let name = req.params.img_name ;
     res.sendFile( __dirname +'/public/media/imgs/icons/' + name)
 })
+app.get('/cover/:team/:img_name',(req ,res)=>{
+    // res.render('introduction');
+    let name = req.params.img_name ;
+    let team = req.params.team;
+    res.sendFile( __dirname +'/public/media/imgs/covers/'+team+'/' + name)
+})
+app.get('/tn/:team/mp3/:pic_name',(req ,res)=>{
+    // res.render('introduction');
+    let piece = req.params.team ;
+    let name = req.params.pic_name ;
+    res.sendFile( __dirname +'/public/media/mp3/'+ piece +'/' + name)
+})
+app.get('/favicon' , (req ,res)=>{
+res.sendFile(__dirname +'/public/media/imgs/favicon.png')
+})
+
+
+
+/////////////////////////////////////////////////////////////////
+
+
+
+
+
 
 const homeRouter = require('./routes/home')
 app.use('/', homeRouter)
