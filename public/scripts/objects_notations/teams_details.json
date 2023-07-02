@@ -2,7 +2,7 @@
   [
     {
       "name": "awled_lbled_intro",
-      "name_art" : "",
+      "name_art" : "awled_lbled_intro",
       "artist": "gnaweya origin" ,
       "duration" : "03:16",
       "image": "cover/as_marsa/as_marsa1.jpg",
@@ -11,7 +11,7 @@
     },
     {
       "name": "la_vie_de_la_mort",
-      "name_art" : "",
+      "name_art" : "la_vie_de_la_mort",
       "artist": "gnaweya origin",
       "image": "cover/as_marsa/as_marsa2.jpg",
       "duration" : "2:35",
@@ -20,7 +20,7 @@
     },
     {
       "name": "khadhra_w_safra_7eyati",
-      "name_art" : "",
+      "name_art" : "khadhra_w_safra_7eyati",
       "artist": "gnaweya origin",
       "image": "cover/as_marsa/as_marsa3.jpg",
       "duration" : "2:29",
@@ -29,7 +29,7 @@
     },
     {
       "name": "awled_lbled",
-      "name_art" : "4:27",
+      "name_art" : "awled_lbled",
       "artist": "gnaweya origin",
       "image": "cover/as_marsa/as_marsa4.jpg",
       "duration" : "",
@@ -38,7 +38,7 @@
     },
     {
       "name": "Vamos_gnawiya",
-      "name_art" : "",
+      "name_art" : "Vamos_gnawiya",
       "artist": "gnaweya origin",
       "duration" : "2:45",
       "image": "cover/as_marsa/as_marsa7.jpg",
