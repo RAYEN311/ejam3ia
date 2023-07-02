@@ -315,3 +315,26 @@ scale: 1.15;
 .playbox:hover .play_bu .svg{
     fill: white !important;
 }
+
+
+.playbox .details{
+    position: relative;
+    top: -21%;
+    font-size: 14px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    height: 30%;
+}
+.playbox .details p {
+    color: black;
+    max-width: 80%;
+    text-align: center;
+    word-wrap: break-word;
+    text-transform: capitalize;
+}
+.playbox:hover .details p{
+    color: white;
+}
