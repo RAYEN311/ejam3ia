@@ -131,7 +131,49 @@
       }
       ] , 
       [
-        
+        {
+          "name": "amor_club_africain",
+          "duration" : "3:06",
+          "name_art" : "amor_club_africain",
+          "artist": "club_african origin",
+          "image": "cover/club_african/club_african1.jpg",
+          "path": "amor_club_africain.mp3"
+        },        
+        {
+          "name": "Club_Africain_Curva_Nord_La_Vida_Ultra",
+          "duration" : "3:06",
+          "name_art" : "Club_Africain_Curva_Nord_La_Vida_Ultra",
+          "artist": "club_african origin",
+          "image": "cover/club_african/club_african2.jpg",
+          "path": "Club_Africain_Curva_Nord_La_Vida_Ultra.mp3"
+         }
+        ,        
+        {
+          "name": "Lefriki_Musical_GroupSUDKOM_PÉRIMÉ",
+          "duration" : "3:06",
+          "name_art" : "Lefriki_Musical_GroupSUDKOM_PÉRIMÉ",
+          "artist": "club_african origin",
+          "image": "cover/club_african/club_african3.jpg",
+          "path": "Lefriki_Musical_GroupSUDKOM_PÉRIMÉ.mp3"
+         }
+        ,        
+        {
+          "name": "m3aha_rabi_el_3alamin",
+          "duration" : "3:06",
+          "name_art" : "m3aha_rabi_el_3alamin",
+          "artist": "club_african origin",
+          "image": "cover/club_african/club_african4.jpg",
+          "path": "m3aha_rabi_el_3alamin.mp3"
+         }
+        ,        
+        {
+          "name": "Manifesto_testament_Club_Africain",
+          "duration" : "3:06",
+          "name_art" : "Manifesto_testament_Club_Africain",
+          "artist": "club_african origin",
+          "image": "cover/club_african/club_african5.jpg",
+          "path": "Manifesto-testament_Club_Africain.mp3"
+         }
       ],
       [
         {
