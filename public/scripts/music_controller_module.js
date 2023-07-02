@@ -1,4 +1,7 @@
 import track_list from './objects_notations/teams_details.json' assert {type:'json'} ;
+
+// until now it's just a static link's ('not connected with any database')
+
 import teams_list from './objects_notations/teams_list.json' assert {type:'json'} ;
 
 // Select all the elements in the HTML page
@@ -48,7 +51,7 @@ function set_svg_pause(string1){
   document.querySelector('.'+string1).outerHTML= '<path class="'+ string1 +'" id="'+ string1 +'" d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"/>'
 }
 
-
+const storage_link = true ;
 
 function loadTrack(track_index) {
 
@@ -57,7 +60,11 @@ function loadTrack(track_index) {
   resetValues();
   // Load a new track
   console.log("in loading")
+  if(storage_link){
+    curr_track.src = track_list.tp[current_team_index][track_index].mp3_storage_link_no_host;
+  }else{
   curr_track.src = url() + '/tn/'+ teams_list.teams_devi_1_indexing[current_team_index] +'/mp3/' + track_list.tp[current_team_index][track_index].path || track_list.tp[0].path ;
+  }
   document.querySelector('.img_track').setAttribute('src' , url() +'/'+track_list.tp[current_team_index][track_index].image)
   curr_track.load();
   console.log("loaded")
