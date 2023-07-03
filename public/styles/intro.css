@@ -112,7 +112,7 @@ cursor: pointer;
     }
 
 .anima{
-    opacity: 0.15;
+    opacity: 0.3;
     animation: deplaci 15s linear infinite;
 }
 
